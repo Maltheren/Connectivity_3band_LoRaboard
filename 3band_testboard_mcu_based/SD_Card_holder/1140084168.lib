@@ -1,0 +1,37 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model 1140084168
+#/1545455/1641601/2.50/14/2/Connector
+DEF 1140084168 J 0 30 Y Y 1 F N
+F0 "J" 2950 300 50 H V L CNN
+F1 "1140084168" 2950 200 50 H V L CNN
+F2 "1140084168" 2950 100 50 H I L CNN
+F3 "https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/inputoutput/io_micro_sdcard.pdf" 2950 0 50 H I L CNN
+F4 "1140084168-Micro SD Normal Open H=1.55 NONE PUSH" 2950 -100 50 H I L CNN "Description"
+F5 "1.68" 2950 -200 50 H I L CNN "Height"
+F6 "Amphenol Communications Solutions" 2950 -300 50 H I L CNN "Manufacturer_Name"
+F7 "1140084168" 2950 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "523-114-00841-68" 2950 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Amphenol-Commercial-Products/1140084168?qs=tcdQdce0DUrgPsHyuD5Law%3D%3D" 2950 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "1140084168" 2950 -700 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/1140084168/amphenol-fci?utm_currency=USD&region=europe" 2950 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X DATE_LINE_[BIT_2] 1 0 0 200 R 50 50 0 0 P
+X CARD_DETECT_/_DATE_LINE_[BIT_3] 2 0 -100 200 R 50 50 0 0 P
+X COMMAND/RESPONSE 3 0 -200 200 R 50 50 0 0 P
+X SUPPLY_VOLTAGE 4 0 -300 200 R 50 50 0 0 P
+X CLOCK 5 0 -400 200 R 50 50 0 0 P
+X SUPPLY_VOLTAGE_GND 6 0 -500 200 R 50 50 0 0 P
+X DATE_LINE_[BIT_0] 7 0 -600 200 R 50 50 0 0 P
+X DATE_LINE_[BIT_1] 8 3100 0 200 L 50 50 0 0 P
+X 9 9 3100 -100 200 L 50 50 0 0 P
+X 10 10 3100 -200 200 L 50 50 0 0 P
+X 11 11 3100 -300 200 L 50 50 0 0 P
+X 12 12 3100 -400 200 L 50 50 0 0 P
+X CARD_DETECT_SW_1 CD1 3100 -500 200 L 50 50 0 0 P
+X CARD_DETECT_SW_2 CD2 3100 -600 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 2900 100 2900 -700 200 -700 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

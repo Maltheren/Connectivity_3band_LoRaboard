@@ -1,0 +1,232 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "65994ec6-42d7-4e39-8f54-f3ae991c25e9")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 145.415 69.977)
+		(size 24.765 19.05)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "10123ff1-9060-4000-8c60-359bb6febe8f")
+		(property "Sheetname" "433MHz"
+			(at 145.415 69.2654 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "433MHz_pipeline.kicad_sch"
+			(at 145.415 89.6116 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "MISO" input
+			(at 145.415 77.47 180)
+			(uuid "f233f82a-fbd3-44a5-84c0-745885352123")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MOSI" input
+			(at 145.415 80.01 180)
+			(uuid "754d19c6-4024-4fe1-b9dc-74546fe931f3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SCK" input
+			(at 145.415 82.55 180)
+			(uuid "b00cd1be-ff87-4088-9979-b7a87cf27efd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{cs}" input
+			(at 145.415 86.36 180)
+			(uuid "824c251c-3f7c-4940-b7d9-ef1c66be0152")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{reset}" input
+			(at 145.415 73.66 180)
+			(uuid "9bd86ed4-33e5-4836-9af1-f2c1c48d20bc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "3band_testboard_mcu_based"
+				(path "/65994ec6-42d7-4e39-8f54-f3ae991c25e9"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 69.85 93.98)
+		(size 36.83 21.59)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "191ee6f0-aeae-4961-bbcb-e6d745c28526")
+		(property "Sheetname" "MCU"
+			(at 69.85 93.2684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MCU.kicad_sch"
+			(at 69.85 116.1546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "3band_testboard_mcu_based"
+				(path "/65994ec6-42d7-4e39-8f54-f3ae991c25e9"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 145.288 98.806)
+		(size 24.892 15.494)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "68dc14ec-daf2-4459-845a-bfb529470ce9")
+		(property "Sheetname" "800_2400MHz"
+			(at 145.288 98.0944 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LBAA0XV2GT.kicad_sch"
+			(at 145.288 114.8846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "3band_testboard_mcu_based"
+				(path "/65994ec6-42d7-4e39-8f54-f3ae991c25e9"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 73.406 21.59)
+		(size 43.434 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d6a14229-3b8f-4167-ae17-f69dd845e6b6")
+		(property "Sheetname" "power supply"
+			(at 73.406 20.8784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "psu.kicad_sch"
+			(at 73.406 45.0346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "3band_testboard_mcu_based"
+				(path "/65994ec6-42d7-4e39-8f54-f3ae991c25e9"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

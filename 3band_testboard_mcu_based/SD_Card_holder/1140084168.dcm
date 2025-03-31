@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 1140084168
+D 1140084168-Micro SD Normal Open H=1.55 NONE PUSH
+K
+F https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/inputoutput/io_micro_sdcard.pdf
+$ENDCMP
+#
+#End Doc Library
