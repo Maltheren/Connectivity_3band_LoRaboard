@@ -4,6 +4,13 @@
 	(generator_version "9.0")
 	(uuid "6ee34347-5b9d-45b2-bbaf-d991c3d78e69")
 	(paper "A4")
+	(title_block
+		(title "3-band-LoRa testboard")
+		(date "2025-30-03")
+		(rev "1")
+		(company "AAU-connectivity")
+		(comment 1 "Malthe Sennels")
+	)
 	(lib_symbols
 		(symbol "Connector:Conn_Coaxial"
 			(pin_names
@@ -1161,7 +1168,7 @@
 	)
 	(rectangle
 		(start 70.485 61.595)
-		(end 94.615 88.265)
+		(end 100.33 88.265)
 		(stroke
 			(width 0)
 			(type default)
@@ -1182,6 +1189,16 @@
 			(type none)
 		)
 		(uuid ef818234-4ef0-4fbd-ad27-e3ecc551157b)
+	)
+	(text "RFM96W-433S2"
+		(exclude_from_sim no)
+		(at 30.48 16.002 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "43acd569-80b3-4650-a278-a149c2fe88fb")
 	)
 	(text "Matching network"
 		(exclude_from_sim no)
@@ -1220,6 +1237,12 @@
 		(uuid "2b529678-5023-4e23-9501-7272fe8ba837")
 	)
 	(junction
+		(at 76.2 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "43e5d84f-01c0-4da1-983a-4e1c6daf1c00")
+	)
+	(junction
 		(at 102.87 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1238,10 +1261,26 @@
 		(uuid "cfb401ce-1a2f-45c4-8988-10cfb7a43e56")
 	)
 	(junction
+		(at 76.2 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d6aa8076-91c3-4bb5-88fc-3f0809742c42")
+	)
+	(junction
 		(at 138.43 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e6ca806f-bf62-498f-bda8-f30b5461ea4a")
+	)
+	(wire
+		(pts
+			(xy 76.2 80.01) (xy 87.63 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00b2bc5e-7339-4b9e-b907-40bc68e9c7ab")
 	)
 	(wire
 		(pts
@@ -1302,6 +1341,16 @@
 			(type default)
 		)
 		(uuid "59af9b81-8b6a-4378-b627-3c47536ffb00")
+	)
+	(wire
+		(pts
+			(xy 76.2 72.39) (xy 87.63 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5dacec96-2b32-4fa2-ae55-2fde5d20e5b2")
 	)
 	(wire
 		(pts
@@ -1704,7 +1753,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 81.28 74.93 0)
+		(at 76.2 72.39 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1713,7 +1762,7 @@
 		(fields_autoplaced yes)
 		(uuid "346d0a5f-e3fc-41b3-b5d5-2b59131d23ae")
 		(property "Reference" "#PWR043"
-			(at 81.28 78.74 0)
+			(at 76.2 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1722,7 +1771,7 @@
 			)
 		)
 		(property "Value" "3.3V RF1"
-			(at 81.28 70.1543 0)
+			(at 76.2 67.6143 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1730,7 +1779,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 81.28 74.93 0)
+			(at 76.2 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1739,7 +1788,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 74.93 0)
+			(at 76.2 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1748,7 +1797,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 81.28 74.93 0)
+			(at 76.2 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1763,6 +1812,76 @@
 			(project "3band_testboard_mcu_based"
 				(path "/65994ec6-42d7-4e39-8f54-f3ae991c25e9/10123ff1-9060-4000-8c60-359bb6febe8f"
 					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 87.63 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "36246f30-f35a-4348-8f62-afda1643afcc")
+		(property "Reference" "C18"
+			(at 91.44 74.9299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100p"
+			(at 91.44 77.4699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 88.5952 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 87.63 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 87.63 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "083823f3-a847-474a-b4c7-3c6de0d4bdf7")
+		)
+		(pin "2"
+			(uuid "79749251-2680-468c-a35b-8a8c40b89b71")
+		)
+		(instances
+			(project "3band_testboard_mcu_based"
+				(path "/65994ec6-42d7-4e39-8f54-f3ae991c25e9/10123ff1-9060-4000-8c60-359bb6febe8f"
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -2176,7 +2295,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 81.28 82.55 0)
+		(at 76.2 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2184,7 +2303,7 @@
 		(dnp no)
 		(uuid "62cc8b7b-215d-47ab-9513-37496ac6f75c")
 		(property "Reference" "#PWR04"
-			(at 81.28 88.9 0)
+			(at 76.2 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2193,7 +2312,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 81.28 86.36 0)
+			(at 76.2 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2201,7 +2320,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 81.28 82.55 0)
+			(at 76.2 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2210,7 +2329,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 82.55 0)
+			(at 76.2 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2219,7 +2338,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 81.28 82.55 0)
+			(at 76.2 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2373,7 +2492,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 81.28 78.74 0)
+		(at 76.2 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2382,7 +2501,7 @@
 		(fields_autoplaced yes)
 		(uuid "7acd1d9d-2a9c-46ab-a750-de35b4a8e567")
 		(property "Reference" "C1"
-			(at 85.09 77.4699 0)
+			(at 80.01 74.9299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2391,7 +2510,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 85.09 80.0099 0)
+			(at 80.01 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2400,7 +2519,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 82.2452 82.55 0)
+			(at 77.1652 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2409,7 +2528,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 81.28 78.74 0)
+			(at 76.2 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2418,7 +2537,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 81.28 78.74 0)
+			(at 76.2 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
