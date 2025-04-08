@@ -2,4 +2,6 @@
   (version 7)
   (lib (name "LBAA0XV2GT-001")(type "KiCad")(uri "${KIPRJMOD}/LBAA0XV2GT-001")(options "")(descr ""))
   (lib (name "SD_Card_holder")(type "KiCad")(uri "${KIPRJMOD}/SD_Card_holder")(options "")(descr ""))
+  (lib (name "Tactile_switch")(type "KiCad")(uri "${KIPRJMOD}/Tactile_switch")(options "")(descr ""))
+  (lib (name "Inductor")(type "KiCad")(uri "${KIPRJMOD}/Inductor")(options "")(descr ""))
 )

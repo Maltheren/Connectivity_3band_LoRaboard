@@ -2,4 +2,6 @@
   (version 7)
   (lib (name "LBAA0XV2GT-001")(type "Legacy")(uri "${KIPRJMOD}/LBAA0XV2GT-001/LBAA0XV2GT-001.lib")(options "")(descr ""))
   (lib (name "1140084168")(type "KiCad")(uri "${KIPRJMOD}/SD_Card_holder/1140084168.kicad_sym")(options "")(descr ""))
+  (lib (name "TL3305BF100QG")(type "KiCad")(uri "${KIPRJMOD}/Tactile_switch/TL3305BF100QG.kicad_sym")(options "")(descr ""))
+  (lib (name "ASPI-4030S-100M-T")(type "KiCad")(uri "${KIPRJMOD}/Inductor/ASPI-4030S-100M-T.kicad_sym")(options "")(descr ""))
 )

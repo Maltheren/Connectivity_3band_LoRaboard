@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ASPI-4030S-100M-T
+D Fixed Inductors 10uH 20% Shielded -40C +125C
+K
+F https://abracon.com/Magnetics/power/ASPI-4030S.pdf
+$ENDCMP
+#
+#End Doc Library
