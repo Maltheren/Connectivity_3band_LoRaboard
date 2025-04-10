@@ -1963,7 +1963,7 @@
 	)
 	(text "LBAA0XV2GT-001 - 860 & 2400 MHz modem"
 		(exclude_from_sim no)
-		(at 60.706 61.722 0)
+		(at 59.69 17.78 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -1980,16 +1980,6 @@
 			)
 		)
 		(uuid "af418d67-4472-4351-859d-991eeb9a844a")
-	)
-	(text "LBAA0XV2GT-001 - 860 & 2400 MHz modem"
-		(exclude_from_sim no)
-		(at 60.452 17.018 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-		)
-		(uuid "e423b354-f917-40ac-987e-85482a11eba8")
 	)
 	(text "Matching network"
 		(exclude_from_sim no)
