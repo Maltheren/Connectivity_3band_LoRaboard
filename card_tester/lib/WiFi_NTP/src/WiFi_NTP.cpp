@@ -34,15 +34,71 @@ void sync_handler::connect(){
 
 }
 
+timeval hms2timeval(uint32_t hr, uint32_t min, uint32_t second){
+    timeval time;
+    time.tv_sec = hr * 3600 + min * 60 + second;
+    time.tv_usec = 0;
+    return time;
+}
+
+
+void sync_handler::update_loop(){
+    if(state == none){
+        return;
+    }
+    
+    int64_t now = get_time_us();
+
+    if(now > time_start){
+        time_start += period;
+        
+        (*timer_func)(&time_start);  // Kalder vores timerfunktion
+    }
+    //og så går livet videre
+}
+
+
+
+
+void sync_handler::set_overlap(int64_t overlap){ //overlap i millisekunder
+    this->overlap = overlap*1000; //VI skal lige konvertere til mikrosekunder.
+}
+
+/// @brief Sætter en funktion op med konstant tid der kalder vore calledfunc, start i tidspunktet det skal starte fra, periode er hvor ofte i millisekunder det skal foregå i.
+/// @param called_func 
+/// @param start 
+/// @param period 
+void sync_handler::arm_transmit(void (*called_func)(int64_t* timeout), time_t start, int64_t period){ //periodetid i millisekunder
+    uint64_t t_start_us = ((uint64_t)start)*1000000UL;
+    timer_func = called_func;
+    this->period = period*1000;
+    time_start = t_start_us + overlap;
+    state = send;
+}
+void sync_handler::arm_recieve(void (*called_func)(int64_t* timeout), time_t start, int64_t period){
+    uint64_t t_start_us = ((uint64_t)start)*1000000UL;
+    
+    timer_func = called_func;
+    this->period = period*1000; //konverterer ms til us 
+    time_start = t_start_us; //tidspunkt vi skal starte
+    state = recieve;
+}
+
+
 
 void sync_handler::sync(){
     timeClient.begin(); //Hopper på en NTP pool.
-    bool sucess = timeClient.forceUpdate();
-    Serial.print("Force updated from NTP pool: ");
+    Serial.print("Force updating from NTP pool: ");
+    for(int i = 0; i < 5; i++){
+        bool sucess = timeClient.forceUpdate();
+        delay(1000);
+    }
+
+
     
     
     Serial.println(timeClient.getFormattedTime());
-
+    
 
     //Henter sekunder efter 1970
     time_t epoch_now = timeClient.getEpochTime();

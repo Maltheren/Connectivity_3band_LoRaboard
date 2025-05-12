@@ -8,12 +8,14 @@
 class loRa_spi{
     private:
     SPIClass spi = SPIClass(FSPI);
-    LR1121 LBAA = new Module(CS2, -1, -1, -1, spi, SPISettings()); //Lidt ærgerligt men vi bruger NEW
-    RFM96 RFM = new Module(CS1, -1, -1, -1, spi, SPISettings());
+    LR1121 LBAA = new Module(CS2, -1, RADIOLIB_NC, -1, spi, SPISettings()); //Lidt ærgerligt men vi bruger NEW
+    RFM96 RFM = new Module(CS1, -1, RADIOLIB_NC, -1, spi, SPISettings());
     public:
     bool begin();
-
-    
+    float get_RSSI();
+    bool transmit();
+    int available();
+    int setRX();
 };
 
 extern loRa_spi LoRa_spi;
